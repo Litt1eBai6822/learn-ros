@@ -1,0 +1,8 @@
+<launch>
+        <param name="robot_description"
+        textfile="$(find little_car)/urdf/car01.urdf"/>   // 这一行需要更改为自己urdf文件所在位置
+        
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+        
+		<node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen"/>
+</launch>
